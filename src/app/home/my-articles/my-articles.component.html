@@ -1,0 +1,22 @@
+<section  class="banner_post">
+    <div  class="container-fluid">
+        <div class="row justify-content-between">
+            <div *ngFor="let item of list; let i = index;" class="banner_post_1" [ngStyle]="getStyle(item.img)">
+                <div class="banner_post_iner text-center">
+                        <h5> Catégorie: {{ item.categorie }}</h5>
+                    <a routerLink="/detail-article/{{i}}">
+                        <h2> Title: {{ item.title }} </h2>
+                    </a>
+                    <p> owner:{{ item.owner}}</p>
+                </div>
+                <div width="250">
+                                    
+                        <button type="button" class="btn btn-danger mr-1" (click)="deleteArticle(item, i)">Delete</button>
+                          <a  class="btn btn-primary"  routerLink="/update-article/{{i}}">Edit</a>
+                    
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>

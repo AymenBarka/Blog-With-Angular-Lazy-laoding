@@ -1,0 +1,31 @@
+<div class="row mt-5">
+        <div class="col-md-6 mx-auto">
+            <h2 class="text-center">Update Article</h2>
+            <div class="card mt-3">
+                <div class="card-body">
+                  <form [formGroup]="addForm" (ngSubmit)="UpdateArticle()">
+                    <div class="form-group">
+                      <label class="row-mt-4">Title </label>
+                      <input type="text" class="form-control" formControlName="title"/>
+                      <label class="row-mt-4">Catégorie </label>
+                      <select type="text" class="form-control" formControlName="categorie">
+                            <option value="nourriture">nourriture</option>
+                            <option value="sport">sport</option>
+                            <option value="voyage">voyage</option>
+                      </select>
+                      <label class="row-mt-4">Content </label>
+                      <input type="text" class="form-control" formControlName="content"   size="100" style="height:300px;" />
+                      
+                      <label class="row-mt-4">Image </label>
+                      <input type="file"  class="form-control" />
+                      
+                      
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary col-md-4">Update Article</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+      </div>

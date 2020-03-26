@@ -1,0 +1,143 @@
+<section  class="banner_post">
+    <div  class="container-fluid">
+        <div class="row justify-content-between">
+            <div *ngFor="let item of list; let i = index;" class="banner_post_1" [ngStyle]="getStyle(item.img)">
+                <div class="banner_post_iner text-center">
+                        <h5> Catégorie: {{ item.categorie }}</h5>
+                    <a routerLink="/detail-article/{{i}}">
+                        <h2> Title: {{ item.title }} </h2>
+                    </a>
+                    <p> owner:{{ item.owner}}</p>
+                </div>
+               
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+<!-- banner post end-->
+
+<!-- subscribe form start-->
+
+<!-- subscribe form end-->
+
+<!-- feature_post start-->
+<section class="all_post section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                
+                <div class="page_pageniation">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar_widget">
+                    
+                    <div class="single_sidebar_wiget">
+                        <div class="sidebar_tittle">
+                            <h3>Categories</h3>
+                        </div>
+                        <div class="single_catagory_item category">
+                            <ul class="list-unstyled">
+                                <li><a (click)="filterCategory('sport')">sport</a> <span>(15)</span> </li>
+                                <li><a (click)="filterCategory('nourriture')">nourriture</a> <span>(15)</span> </li>
+                                <li><a (click)="filterCategory('voyage')">voyage</a> <span>(15)</span> </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="single_sidebar_wiget">
+                        <div class="sidebar_tittle">
+                            <h3>Share this post</h3>
+                        </div>
+                        <div class="social_share_icon tags">
+                            <ul class="list-unstyled">
+                                <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature_post end-->
+
+<!-- social_connect_part part start-->
+<section class="social_connect_part">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="social_connect">
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_1.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_2.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_3.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_4.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_5.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="single-social_connect">
+                    <div class="social_connect_img">
+                        <img src="assets/img/insta/instagram_6.png" class="" alt="blog">
+                        <div class="social_connect_overlay">
+                            <a href="#"><span class="ti-instagram"></span></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
